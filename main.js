@@ -14,7 +14,7 @@ let appData  = {
 for(let i = 0; i < 2; i++) {
     let a = prompt('Введите обязательную статью расходов в этом месяце', ''),
         b = prompt('Во сколько обойдется?', '');
-    if( (typeOf(a))=== 'string' && (typeOf(a)) != null && (typeOf(b)) != null &&
+    if( (typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null &&
         a != '' && b != '' && a.length < 50) {
         console.log("done");
         appData.expanses[a] = b;
@@ -37,6 +37,6 @@ do {
         b = prompt("Во сколько обойдется?", "");
     appData.expanses[a] = b;
     y++;
-} while ((typeOf(a))=== 'string' && (typeOf(a)) != null && (typeOf(b)) != null &&
+} while ((typeof(a))=== 'string' && (typeof(a)) != null && (typeof(b)) != null &&
 a != '' && b != '' && a.length < 50);
 alert(appData.cash / 30);
