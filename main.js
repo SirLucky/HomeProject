@@ -19,9 +19,10 @@ for(let i = 0; i < 2; i++) {
         console.log("done");
         appData.expanses[a] = b;
     } else {
-        continue
+        console.log ("Ошибка");
+        i--;
     }
-}
+};
 alert(appData.cash / 30);
 let x = 0;
 while ( x < 2) {
